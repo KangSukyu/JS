@@ -1,8 +1,9 @@
-const age = 96;
-function calculateKrAge(ageOfForeigner) {
-  return ageOfForeigner + 2;
+const h1 = document.querySelector("div.hello:first-child h1");
+
+function handleTitleClick() {
+  h1.classList.toggle("clicked");
 }
 
-const krAge = calculateKrAge(age);
+h1.addEventListener("click", handleTitleClick);
 
-console.log(krAge);
+//https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
